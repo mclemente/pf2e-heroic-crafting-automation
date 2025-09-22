@@ -1,0 +1,67 @@
+name: 'Effect: Crafter''s Fulu (Exploration)'
+type: effect
+img: systems/pf2e/icons/default-icons/effect.svg
+effects: []
+folder: null
+flags: {}
+_stats:
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.348'
+  systemId: pf2e
+  systemVersion: 7.5.1
+  createdTime: 1758513967958
+  modifiedTime: 1758513972792
+  lastModifiedBy: t20builder000000
+ownership:
+  default: 0
+system:
+  description:
+    gm: ''
+    value: >-
+      <p><span style="color:#191813;font-family:Roboto,
+      sans-serif;font-size:13px">You can roll twice and take the better result
+      on your next check to
+      @Compendium[heroic-crafting.actions.bvV60XkAwimfgtAu]{Craft A Project};
+      this is a fortune effect.</span></p>
+  rules:
+    - key: RollTwice
+      selector: crafting
+      keep: higher
+      removeAfterRoll: 'true'
+      predicate:
+        - action:craftproj
+  slug: null
+  _migration:
+    version: 0.943
+    previous:
+      schema: 0.935
+      foundry: '13.348'
+      system: 7.5.1
+  traits:
+    otherTags: []
+    value: []
+  publication:
+    title: ''
+    authors: ''
+    license: OGL
+    remaster: false
+  level:
+    value: 8
+  duration:
+    value: 1
+    unit: hours
+    expiry: turn-start
+    sustained: false
+  start:
+    value: 0
+    initiative: null
+  tokenIcon:
+    show: false
+  badge: null
+  context: null
+  unidentified: false
+  fromSpell: false
+_id: 7usAV0Sv6L2q6c4Z
+sort: 600000
+_key: '!items!7usAV0Sv6L2q6c4Z'

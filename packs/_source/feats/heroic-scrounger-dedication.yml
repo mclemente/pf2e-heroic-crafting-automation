@@ -1,0 +1,90 @@
+_id: 3kqHCl9ihBoNH1GV
+name: Heroic Scrounger Dedication
+type: feat
+img: systems/pf2e/icons/default-icons/feats.webp
+effects: []
+folder: null
+sort: 0
+flags: {}
+_stats:
+  coreVersion: '13.346'
+  systemId: pf2e
+  systemVersion: 6.12.4
+  createdTime: null
+  modifiedTime: 1754335597662
+  lastModifiedBy: t20builder000000
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+system:
+  description:
+    value: >-
+      <p>You can craft items even without appropriate tools or a workshop,
+      though you take a -2 item penalty to your Crafting check. Additionally,
+      you don't need a physical formula book to remember all of your formulas;
+      you pay the same cost as normal to learn them, but you memorize them
+      all.</p>
+
+      <p>You gain the Midnight Crafting skill feat, regardless of whether you
+      meet its prerequisites. When you use it to craft a common, non-magical
+      weapon, armor, or piece of nonconsumable adventuring gear of 1st level or
+      lower, you can choose to create that item as a temporary item. Temporary
+      items created in this way last only [[/r 1d4 #hours]]{1d4 hours} (the GM
+      rolls secretly) before falling apart and becoming unusable, and other
+      creatures treat them as shoddy items, but you can ignore the rush cost
+      when crafting them. You can create only the physical item, not any
+      information or magic, so for example, while you could create a blank
+      journal or one of random pages, you couldn't use it as a scholarly journal
+      or a religious text.</p>
+
+      <p>Additionally, you can use other items or materials you have on hand to
+      pay for the costs of crafting an item with Midnight Crafting, without
+      needing to Salvage them first. If you do so, you take a -5 penalty on the
+      Crafting check (or a -10 penalty if the materials you used were
+      particularly unsuitable, as determined by the GM).</p>
+
+      <p><strong>Special</strong> You can't select another dedication feat until
+      you have gained two other feats from the Scrounger archetype. This feat
+      counts as Scrounger Dedication.</p>
+    gm: ''
+  traits:
+    value:
+      - archetype
+      - dedication
+    rarity: uncommon
+    otherTags: []
+  rules:
+    - key: GrantItem
+      uuid: Compendium.heroic-crafting.feats.Bt7VlbJdvdjarCEI
+      replaceSelf: false
+  slug: null
+  level:
+    value: 2
+  onlyLevel1: false
+  maxTakable: 1
+  actionType:
+    value: passive
+  actions:
+    value: null
+  prerequisites:
+    value:
+      - value: trained in Crafting
+  location: null
+  publication:
+    title: ''
+    authors: ''
+    license: OGL
+    remaster: false
+  _migration:
+    version: 0.935
+    previous:
+      schema: null
+      foundry: '12.343'
+      system: 6.12.4
+  category: bonus
+  subfeatures:
+    proficiencies: {}
+    senses: {}
+    suppressedFeatures: []
+_key: '!items!3kqHCl9ihBoNH1GV'

@@ -1,0 +1,62 @@
+_id: 6nZCAjjhLVYSik2d
+name: Vigilant Forager
+type: feat
+img: systems/pf2e/icons/default-icons/feats.webp
+effects: []
+folder: null
+sort: 0
+flags: {}
+_stats:
+  coreVersion: '13.346'
+  systemId: pf2e
+  systemVersion: 6.12.4
+  createdTime: null
+  modifiedTime: 1754335597662
+  lastModifiedBy: t20builder000000
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+system:
+  description:
+    value: >-
+      <p>Even while adventuring, you never stop looking for useful supplies. You
+      can use the @Compendium[heroic-crafting.actions.3wxry7yFVyB4nG5a]{Forage
+      Crafting Resources} activity after 8 hours or less of exploration, but if
+      you do, you take a -5 penalty.</p>
+    gm: ''
+  traits:
+    value: []
+    rarity: common
+    otherTags: []
+  rules: []
+  slug: null
+  level:
+    value: 2
+  onlyLevel1: false
+  maxTakable: 1
+  actionType:
+    value: passive
+  actions:
+    value: null
+  prerequisites:
+    value:
+      - value: expert in Survival
+  location: null
+  publication:
+    title: ''
+    authors: ''
+    license: OGL
+    remaster: false
+  _migration:
+    version: 0.935
+    previous:
+      schema: null
+      foundry: '12.343'
+      system: 6.12.4
+  category: bonus
+  subfeatures:
+    proficiencies: {}
+    senses: {}
+    suppressedFeatures: []
+_key: '!items!6nZCAjjhLVYSik2d'

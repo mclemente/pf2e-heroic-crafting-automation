@@ -1,0 +1,71 @@
+_id: 0EfF9bH92Y2dk1J6
+name: Quick Crafting
+type: feat
+img: systems/pf2e/icons/default-icons/feats.webp
+effects: []
+folder: null
+sort: 0
+flags: {}
+_stats:
+  coreVersion: '13.348'
+  systemId: pf2e
+  systemVersion: 7.5.1
+  createdTime: null
+  modifiedTime: 1758512841989
+  lastModifiedBy: t20builder000000
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+system:
+  description:
+    value: >-
+      <p>Your advanced skill allows you to craft much faster. You can choose to
+      double the values listed in
+      @Compendium[heroic-crafting.tables.EDZW2vtmpGZUqUrk]{Table 1: Spending
+      Limit} for the purposes of
+      @Compendium[heroic-crafting.actions.bvV60XkAwimfgtAu]{Craft A
+      Project}.</p>
+    gm: ''
+  traits:
+    value: []
+    rarity: common
+    otherTags: []
+  rules:
+    - key: CraftingOption
+      desc: Double the spending limit.
+    - key: ModifyCraftAProject
+      mode: multiply
+      target: max
+      amount: 2
+      toggledBy: quick-crafting
+  slug: null
+  level:
+    value: 7
+  onlyLevel1: false
+  maxTakable: 1
+  actionType:
+    value: passive
+  actions:
+    value: null
+  prerequisites:
+    value:
+      - value: master in Crafting
+  location: null
+  publication:
+    title: ''
+    authors: ''
+    license: OGL
+    remaster: false
+  _migration:
+    version: 0.935
+    previous:
+      schema: null
+      foundry: '12.343'
+      system: 6.12.4
+  category: bonus
+  subfeatures:
+    proficiencies: {}
+    senses: {}
+    suppressedFeatures: []
+_key: '!items!0EfF9bH92Y2dk1J6'

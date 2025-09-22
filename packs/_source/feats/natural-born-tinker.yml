@@ -1,0 +1,73 @@
+_id: G6mEj1Maoan4s5mx
+name: Natural-Born Tinker
+type: feat
+img: systems/pf2e/icons/default-icons/feats.webp
+effects: []
+folder: null
+sort: 0
+flags: {}
+_stats:
+  coreVersion: '13.348'
+  systemId: pf2e
+  systemVersion: 7.5.1
+  createdTime: null
+  modifiedTime: 1758512754446
+  lastModifiedBy: t20builder000000
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+system:
+  description:
+    value: >-
+      <p>Your time living off the land has taught you that with enough care,
+      many useful items can be created from naturally-occurring materials. You
+      can use your Survival modifier instead of your Crafting modifier on checks
+      to @Compendium[heroic-crafting.actions.bvV60XkAwimfgtAu]{Craft A Project}.
+      Additionally, you can use Survival in place of Crafting for the purposes
+      of meeting the requirements to Begin or Craft a Project and to qualify for
+      feats that fulfill crafting requirements, such as Alchemical Crafting and
+      Magical Crafting.</p>
+    gm: ''
+  traits:
+    value: []
+    rarity: common
+    otherTags: []
+  rules:
+    - key: CraftingOption
+      desc: Craft with Survival instead of Crafting.
+    - key: ModifyCraftAProject
+      target: skill
+      mode: override
+      amount: survival
+      toggledBy: natural-born-tinker
+  slug: null
+  level:
+    value: 2
+  onlyLevel1: false
+  maxTakable: 1
+  actionType:
+    value: passive
+  actions:
+    value: null
+  prerequisites:
+    value:
+      - value: expert in Survival
+  location: null
+  publication:
+    title: ''
+    authors: ''
+    license: OGL
+    remaster: false
+  _migration:
+    version: 0.935
+    previous:
+      schema: null
+      foundry: '12.343'
+      system: 6.12.4
+  category: bonus
+  subfeatures:
+    proficiencies: {}
+    senses: {}
+    suppressedFeatures: []
+_key: '!items!G6mEj1Maoan4s5mx'

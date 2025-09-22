@@ -1,0 +1,112 @@
+name: Transmuter's Vial (Major)
+type: consumable
+img: systems/pf2e/icons/default-icons/consumable.svg
+effects: []
+folder: null
+flags: {}
+_stats:
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.348'
+  systemId: pf2e
+  systemVersion: 7.5.1
+  createdTime: 1758513973595
+  modifiedTime: 1758513973595
+  lastModifiedBy: t20builder000000
+ownership:
+  default: 0
+system:
+  description:
+    gm: ''
+    value: >-
+      <p><strong>Activate</strong> <span class="pf2-icon">1</span>
+      (Interact)</p>
+
+      <p>The exact makeup of this substance is somewhat unclear, but it seems to
+      consist partially of a tiny amount of adamantine powder suspended in a
+      powerful acid. When poured over an unattended object, this unstable liquid
+      increases or decreases the object's Hardness by 10, to a maximum of 20.
+      You choose whether to increase or decrease when you use the vial. This
+      change lasts for 1 hour.</p>
+  rules: []
+  slug: null
+  _migration:
+    version: 0.943
+    lastMigration: null
+    previous:
+      schema: 0.935
+      foundry: '13.348'
+      system: 7.5.1
+  traits:
+    otherTags: []
+    value:
+      - alchemical
+      - consumable
+    rarity: common
+  publication:
+    title: Heroic Crafting
+    authors: ''
+    license: OGL
+    remaster: false
+  level:
+    value: 17
+  quantity: 1
+  baseItem: null
+  bulk:
+    value: 0.1
+  hp:
+    value: 0
+    max: 0
+  hardness: 0
+  price:
+    value:
+      gp: 2850
+  equipped:
+    carryType: worn
+  containerId: null
+  size: med
+  material:
+    type: null
+    grade: null
+  identification:
+    status: identified
+    unidentified:
+      name: Unusual Liquid
+      img: systems/pf2e/icons/unidentified_item_icons/potions.webp
+      data:
+        description:
+          value: ''
+    misidentified: {}
+  category: other
+  uses:
+    value: 1
+    max: 1
+    autoDestroy: true
+    per: null
+    autoUse: true
+  damage: null
+  usage:
+    value: held-in-one-hand
+  stackGroup: null
+  spell: null
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  autoUse:
+    value: true
+    _deprecated: true
+_id: LywOXDQQGjD1EQuk
+sort: 0
+_key: '!items!LywOXDQQGjD1EQuk'

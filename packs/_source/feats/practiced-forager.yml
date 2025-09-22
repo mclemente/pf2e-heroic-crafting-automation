@@ -1,0 +1,91 @@
+_id: Vl9uix2r4u2Khx8g
+name: Practiced Forager
+type: feat
+img: systems/pf2e/icons/default-icons/feats.webp
+effects: []
+folder: null
+sort: 0
+flags: {}
+_stats:
+  coreVersion: '13.346'
+  systemId: pf2e
+  systemVersion: 6.12.4
+  createdTime: null
+  modifiedTime: 1754335597662
+  lastModifiedBy: t20builder000000
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+system:
+  description:
+    value: >-
+      <p>Your knowledge of materials found in the wilderness includes some rare,
+      but very valuable resources. When you
+      @Compendium[heroic-crafting.actions.3wxry7yFVyB4nG5a]{Forage Crafting
+      Resources}, a critical success adds double the amount listed in
+      @Compendium[heroic-crafting.tables.sRUtd8SA7a47dGA8]{Table 2: Gathered
+      Income} for the location's level to your material trove each day. If you
+      are a master in Survival, instead add triple the listed amount.</p>
+    gm: ''
+  traits:
+    value: []
+    rarity: common
+    otherTags: []
+  rules:
+    - key: Note
+      selector: survival
+      text: >-
+        <p class='compact-text'><strong>{item|name}</strong> When you Forage
+        Crafting Resources, a critical success adds double the amount listed in
+        Table 2: Gathered Income for the location's level to your material trove
+        each day.</p>
+      predicate:
+        all:
+          - action:forage
+        any:
+          - proficiency:trained
+          - proficiency:expert
+    - key: Note
+      selector: survival
+      text: >-
+        <p class='compact-text'><strong>{item|name}</strong> When you Forage
+        Crafting Resources, a critical success adds triple the amount listed in
+        Table 2: Gathered Income for the location's level to your material trove
+        each day.</p>
+      predicate:
+        all:
+          - action:forage
+        any:
+          - proficiency:master
+          - proficiency:legendary
+  slug: null
+  level:
+    value: 1
+  onlyLevel1: false
+  maxTakable: 1
+  actionType:
+    value: passive
+  actions:
+    value: null
+  prerequisites:
+    value:
+      - value: trained in Survival
+  location: null
+  publication:
+    title: ''
+    authors: ''
+    license: OGL
+    remaster: false
+  _migration:
+    version: 0.935
+    previous:
+      schema: null
+      foundry: '12.343'
+      system: 6.12.4
+  category: bonus
+  subfeatures:
+    proficiencies: {}
+    senses: {}
+    suppressedFeatures: []
+_key: '!items!Vl9uix2r4u2Khx8g'

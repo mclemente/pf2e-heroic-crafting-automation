@@ -1,0 +1,49 @@
+_id: sRUtd8SA7a47dGA8
+name: 'Table 2: Gathered Income'
+folder: null
+sort: 0
+flags: {}
+pages:
+  - name: 'Table 2: Gathered Income'
+    type: text
+    title:
+      show: false
+      level: 1
+    text:
+      format: 1
+      content: "<table border=\"1\">\n<tbody>\n<tr>\n<td>Level</td>\n<td>Income</td>\n</tr>\n<tr>\n<td>0</td>\n<td>1 sp</td>\n</tr>\n<tr>\n<td>1</td>\n<td>4 sp</td>\n</tr>\n<tr>\n<td>2</td>\n<td>6 sp</td>\n</tr>\n<tr>\n<td>3</td>\n<td>1 gp</td>\n</tr>\n<tr>\n<td>4</td>\n<td>1 gp, 6 sp</td>\n</tr>\n<tr>\n<td>5</td>\n<td>2 gp</td>\n</tr>\n<tr>\n<td>6</td>\n<td>4 gp</td>\n</tr>\n<tr>\n<td>7</td>\n<td>5 gp</td>\n</tr>\n<tr>\n<td>8</td>\n<td>6 gp</td>\n</tr>\n<tr>\n<td>9</td>\n<td>8 gp</td>\n</tr>\n<tr>\n<td>10</td>\n<td>10 gp</td>\n</tr>\n<tr>\n<td>11</td>\n<td>12 gp</td>\n</tr>\n<tr>\n<td>12</td>\n<td>16 gp</td>\n</tr>\n<tr>\n<td>13</td>\n<td>24 gp</td>\n</tr>\n<tr>\n<td>14</td>\n<td>30 gp</td>\n</tr>\n<tr>\n<td>15</td>\n<td>40 gp</td>\n</tr>\n<tr>\n<td>16</td>\n<td>60 gp</td>\n</tr>\n<tr>\n<td>17</td>\n<td>80 gp</td>\n</tr>\n<tr>\n<td>18</td>\n<td>140 gp</td>\n</tr>\n<tr>\n<td>19</td>\n<td>200 gp</td>\n</tr>\n<tr>\n<td>20</td>\n<td>300 gp</td>\n</tr>\n</tbody>\n</table>\n<p>\_</p>"
+    _stats:
+      coreVersion: '13.346'
+      systemId: null
+      systemVersion: null
+      createdTime: null
+      modifiedTime: null
+      lastModifiedBy: null
+      duplicateSource: null
+      exportSource: null
+    _id: xbQPSL8dTLd4pTr5
+    system: {}
+    image: {}
+    video:
+      controls: true
+      volume: 0.5
+    src: null
+    sort: 0
+    ownership:
+      default: -1
+    flags: {}
+    category: null
+    _key: '!journal.pages!sRUtd8SA7a47dGA8.xbQPSL8dTLd4pTr5'
+_stats:
+  coreVersion: '13.346'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+categories: []
+_key: '!journal!sRUtd8SA7a47dGA8'

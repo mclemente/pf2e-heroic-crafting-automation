@@ -1,0 +1,100 @@
+_id: Bt7VlbJdvdjarCEI
+name: Midnight Crafting
+type: feat
+img: systems/pf2e/icons/default-icons/feats.webp
+effects: []
+folder: null
+sort: 0
+flags: {}
+_stats:
+  coreVersion: '13.348'
+  systemId: pf2e
+  systemVersion: 7.5.1
+  createdTime: null
+  modifiedTime: 1758512721222
+  lastModifiedBy: t20builder000000
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+system:
+  description:
+    value: >-
+      <p>You can burn additional resources to craft on a tight deadline. You can
+      @Compendium[heroic-crafting.actions.bvV60XkAwimfgtAu]{Craft A Project}
+      with a duration of only 10 minutes. When you do so, use the same rules as
+      the Hour duration, but you must expend double the amount of crafting
+      materials. The additional materials spent this way are called the "rush
+      cost" and don't add to the check's Cost or Progress.</p>
+
+      <p>If you critically fail a Crafting check using this feat, you deduct
+      twice as much progress as normal from your progress.</p>
+
+      <p>Just like Hourly checks, crafting this way is an exploration activity
+      and requires you to have all your materials on hand. Crafting this way
+      also counts as one Hourly check for the purposes of determining how many
+      checks you can make in a day without Working Overtime.</p>
+    gm: ''
+  traits:
+    value: []
+    rarity: common
+    otherTags: []
+  rules:
+    - key: CraftingOption
+      desc: Craft in 10 minutes. Lose double progress on critical failure.
+    - key: AddCraftProgress
+      mode: multiply
+      amount: 2
+      predicate:
+        - action:craftproj
+        - crafting:heroic:duration:hour
+        - crafting:heroic:settings:midnight-crafting
+      outcome:
+        - criticalFailure
+    - key: ModifyCraftAProject
+      mode: multiply
+      target: rushCost
+      amount: 1
+      toggledBy: midnight-crafting
+    - key: Note
+      selector: skill-check
+      text: >-
+        If you critically fail a Crafting check using this feat, you deduct
+        twice as much progress as normal from your progress.
+      predicate:
+        - action:craftproj
+        - crafting:heroic:duration:hour
+        - crafting:heroic:settings:midnight-crafting
+      title: '{item|name}'
+      outcome:
+        - criticalFailure
+  slug: null
+  level:
+    value: 2
+  onlyLevel1: false
+  maxTakable: 1
+  actionType:
+    value: passive
+  actions:
+    value: null
+  prerequisites:
+    value:
+      - value: expert in Crafting
+  location: null
+  publication:
+    title: ''
+    authors: ''
+    license: OGL
+    remaster: false
+  _migration:
+    version: 0.935
+    previous:
+      schema: null
+      foundry: '12.343'
+      system: 6.12.4
+  category: bonus
+  subfeatures:
+    proficiencies: {}
+    senses: {}
+    suppressedFeatures: []
+_key: '!items!Bt7VlbJdvdjarCEI'

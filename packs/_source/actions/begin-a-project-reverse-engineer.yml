@@ -1,0 +1,64 @@
+_id: udZZ9cFCAtgA4TBx
+name: Begin A Project (Reverse-Engineer)
+type: action
+img: systems/pf2e/icons/actions/Passive.webp
+effects: []
+folder: null
+sort: 0
+flags: {}
+_stats:
+  coreVersion: '13.346'
+  systemId: pf2e
+  systemVersion: 6.12.4
+  createdTime: null
+  modifiedTime: 1754335586762
+  lastModifiedBy: t20builder000000
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+system:
+  description:
+    value: >-
+      <p><strong>Requirements</strong> trained in Crafting; you have the
+      prerequisite feats for the item; you have the appropriate proficiency to
+      craft the item.</p>
+
+      <p><strong>Cost</strong> The item whose formula you want to
+      reverse-engineer</p>
+
+      <p>To begin a crafting project, write down the name of the item you're
+      crafting and its total Price. Spend crafting materials worth up to half
+      the item's Price, and write down that value. This is the project's Current
+      Value, and it will increase as you complete Crafting checks. When the
+      Current Value equals the item's Price, the project is complete. The GM
+      determines the duration of this activity.</p>
+
+      <p>This destroys the item, but leaves behind fragments which can be
+      @Compendium[heroic-crafting.actions.GOpD2cXjEF1L7R68]{Salvaged} for 50% of
+      the item's value</p>
+    gm: ''
+  traits:
+    value:
+      - exploration
+    otherTags: []
+  rules: []
+  slug: null
+  actionType:
+    value: passive
+  actions:
+    value: null
+  deathNote: false
+  publication:
+    title: ''
+    authors: ''
+    license: OGL
+    remaster: false
+  _migration:
+    version: 0.935
+    previous:
+      schema: null
+      foundry: '12.343'
+      system: 6.12.4
+  category: null
+_key: '!items!udZZ9cFCAtgA4TBx'

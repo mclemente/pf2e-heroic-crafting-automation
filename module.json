@@ -40,41 +40,87 @@
                     "verified": "6.10.2"
                 }
             }
-        ],
-        "recommends": [{
-            "id": "heroic-crafting",
-            "type": "module",
-            "manifest": "https://raw.githubusercontent.com/hivefrog-studio/heroic-crafting-foundry-module/master/module.json",
-            "compatibility": {
-              "verified": "1.0.1"
-            }
-          }]
+        ]
     },
     "packs": [
         {
-            "label": "HC Automation - Items",
-            "name": "heroic-crafting-automation-items",
+            "label": "Items",
+            "name": "items",
             "system": "pf2e",
             "path": "packs/items",
             "type": "Item",
-            "private": false
+            "ownership": {
+                "PLAYER": "OBSERVER",
+                "ASSISTANT": "OWNER"
+            }
         },
         {
-            "label": "HC Automation - Macros",
-            "name": "heroic-crafting-automation-macros",
+            "label": "Macros",
+            "name": "macros",
             "system": "pf2e",
             "path": "packs/macros",
             "type": "Macro",
-            "private": false
+            "ownership": {
+                "PLAYER": "OBSERVER",
+                "ASSISTANT": "OWNER"
+            }
+        },
+        {
+            "name": "vehicles",
+            "label": "Vehicles",
+            "path": "packs/vehicles",
+            "type": "Actor",
+            "system": "pf2e",
+            "ownership": {
+                "PLAYER": "OBSERVER",
+                "ASSISTANT": "OWNER"
+            }
+        },
+        {
+            "name": "feats",
+            "label": "Feats",
+            "path": "packs/feats",
+            "type": "Item",
+            "system": "pf2e",
+            "ownership": {
+                "PLAYER": "OBSERVER",
+                "ASSISTANT": "OWNER"
+            }
+        },
+        {
+            "name": "actions",
+            "label": "Actions",
+            "path": "packs/actions",
+            "type": "Item",
+            "system": "pf2e",
+            "ownership": {
+                "PLAYER": "OBSERVER",
+                "ASSISTANT": "OWNER"
+            }
+        },
+        {
+            "name": "tables",
+            "label": "Tables",
+            "path": "packs/tables",
+            "type": "JournalEntry",
+            "system": "pf2e",
+            "ownership": {
+                "PLAYER": "OBSERVER",
+                "ASSISTANT": "OWNER"
+            }
         }
     ],
     "packFolders": [
         {
-          "name": "PF2E Heroic Crafting (Automation)",
+          "name": "Heroic Crafting",
           "sorting": "a",
           "packs": [
-            "heroic-crafting-automation-items",
-            "heroic-crafting-automation-macros"
+            "actions",
+            "feats",
+            "items",
+            "macros",
+            "tables",
+            "vehicles"
           ]
         }
       ]

@@ -1,0 +1,82 @@
+_id: bvV60XkAwimfgtAu
+name: Craft A Project
+type: action
+img: systems/pf2e/icons/actions/Passive.webp
+effects: []
+folder: null
+sort: 0
+flags: {}
+_stats:
+  coreVersion: '13.346'
+  systemId: pf2e
+  systemVersion: 6.12.4
+  createdTime: null
+  modifiedTime: 1754335586762
+  lastModifiedBy: t20builder000000
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+system:
+  description:
+    value: >-
+      <p><strong>Requirements</strong> trained in Crafting; you have
+      @Compendium[heroic-crafting.actions.ULKxHUhxSoAKa9eD]{Begun a Project} and
+      have not yet finished it; you are not
+      @Compendium[pf2e.conditionitems.Fatigued]{Fatigued}; you have appropriate
+      tools and in many cases a work space.</p>
+
+      <p><strong>Cost</strong> crafting materials worth up to the amount listed
+      in @Compendium[heroic-crafting.tables.EDZW2vtmpGZUqUrk]{Table 1: Spending
+      Limit}</p>
+
+      <p>Choose the amount of time to spend crafting: 1 hour, 1 day, or 1 week.
+      The time spent, along with your level, determines the maximum Cost of this
+      activity.</p>
+
+      <p>At the end of the duration, decide the Cost of this activity, then make
+      a @Check[type:crafting|traits:action:craftproj|name:{itemName}] check. The
+      GM determines the DC based on the item's level, rarity, and any other
+      circumstances.</p>
+
+      <p><strong>Success</strong> You work productively during this period. Add
+      double this activity's Cost to the project's Current Value.</p>
+
+      <p><strong>Failure</strong> You work unproductively during this period.
+      Add half this activity's Cost to the project's Current Value.</p>
+
+      <p><strong>Critical Failure</strong> You ruin your materials and suffer a
+      setback while crafting. Deduct this activity's Cost from the project's
+      Current Value. If this reduces the project's Current Value below 0, the
+      project is ruined and must be started again.</p>
+
+      <p>If the difference between your project's Current Value and its Price is
+      less than this activity's maximum Cost, you can forgo the Crafting check.
+      Instead, at the end of the duration you may simply pay the remaining value
+      to complete the project.</p>
+    gm: ''
+  traits:
+    value:
+      - downtime
+      - manipulate
+    otherTags: []
+  rules: []
+  slug: null
+  actionType:
+    value: passive
+  actions:
+    value: null
+  deathNote: false
+  publication:
+    title: ''
+    authors: ''
+    license: OGL
+    remaster: false
+  _migration:
+    version: 0.935
+    previous:
+      schema: null
+      foundry: '12.343'
+      system: 6.12.4
+  category: null
+_key: '!items!bvV60XkAwimfgtAu'

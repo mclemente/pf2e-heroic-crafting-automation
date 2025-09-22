@@ -1,0 +1,60 @@
+_id: G1XQoSDRTApseZAa
+name: Instant Crafting
+type: feat
+img: systems/pf2e/icons/default-icons/feats.webp
+effects: []
+folder: null
+sort: 0
+flags: {}
+_stats:
+  coreVersion: '13.346'
+  systemId: pf2e
+  systemVersion: 6.12.4
+  createdTime: null
+  modifiedTime: 1754335597662
+  lastModifiedBy: t20builder000000
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+system:
+  description:
+    value: "<p><strong>Cost</strong> the Price of the chosen item</p>\n<p><strong>Frequency</strong> Once per day</p>\n<p>You've learned the secrets of replaceable parts and carry component items on you to produce anything you might need at a moment's notice. You can instantly produce any item you meet the crafting requirements for. The item's level must be no higher than half your level, and its Bulk must be low enough that carrying it wouldn't have made you encumbered. Attempt a\_ @Check[type:crafting|dc:@self.level|adjustment:5] check.</p>\n<hr />\n<p><strong>Critical Success</strong> You produce the desired item, and you can immediately use any one Activate activity the item has as a free action as long as that Activate activity is three actions or less.</p>\n<p><strong>Success</strong> You produce the desired item.</p>\n<p><strong>Failure</strong> You partially complete the desired item. You can finish the item by spending another two actions on your next turn.</p>\n<p><strong>Critical Failure</strong> Something goes horribly wrong in the assembly process, and the item explodes. You and all creatures within a 30 foot emanation take [[/r {7d6}[fire]]]{7d6 fire damage} and [[/r {7d6}]]{7d6} damage of another type, at the GM's discretion. Typically, magical items deal force damage, alchemical items deal acid damage, and other items deal sonic damage.</p>"
+    gm: ''
+  traits:
+    value:
+      - manipulate
+    rarity: common
+    otherTags: []
+  rules: []
+  slug: null
+  level:
+    value: 15
+  onlyLevel1: false
+  maxTakable: 1
+  actionType:
+    value: action
+  actions:
+    value: 3
+  prerequisites:
+    value:
+      - value: legendary in Crafting
+      - value: Midnight Crafting
+  location: null
+  publication:
+    title: ''
+    authors: ''
+    license: OGL
+    remaster: false
+  _migration:
+    version: 0.935
+    previous:
+      schema: null
+      foundry: '12.343'
+      system: 6.12.4
+  category: bonus
+  subfeatures:
+    proficiencies: {}
+    senses: {}
+    suppressedFeatures: []
+_key: '!items!G1XQoSDRTApseZAa'

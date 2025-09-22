@@ -1,0 +1,115 @@
+name: Material Trove
+type: equipment
+effects: []
+system:
+  description:
+    gm: ''
+    value: >-
+      <p>If you frequently use the Craft a Project activity as an exploration
+      activity - or on the road where materials can't easily be bought - it can
+      be tedious to track your available materials and their values. The
+      Material Trove provides a streamlined way to track common crafting
+      materials.</p>
+
+      <p>A Material Trove stores general-purpose crafting materials. The amount
+      and quality of these materials are represented by a value in gp. This
+      value can be increased by purchasing generic crafting materials with
+      currency or by any of the methods specified in the Gathering Materials
+      section opposite. The contents of a Material Trove can only be used to
+      Begin or Craft a Project.</p>
+
+      <hr />
+
+      <p><strong>Foundry Note</strong> Use the
+      @UUID[Compendium.pf2e-heroic-crafting-automation.heroic-crafting-automation-macros.Macro.wtYkY4Kay4dZ3HT6]{Refill
+      Material Troves} macro to actually fill up your material troves.</p>
+  rules: []
+  slug: null
+  _migration:
+    version: null
+    lastMigration: null
+  traits:
+    otherTags: []
+    value: []
+    rarity: common
+  publication:
+    title: ''
+    authors: ''
+    license: OGL
+    remaster: false
+  level:
+    value: 1
+  quantity: 0
+  baseItem: null
+  bulk:
+    value: 0.1
+  hp:
+    value: 0
+    max: 0
+    brokenThreshold: 0
+  hardness: 0
+  price:
+    value:
+      sp: 3
+  equipped:
+    carryType: worn
+    invested: null
+    '-=inSlot': null
+  containerId: null
+  size: med
+  material:
+    type: null
+    grade: null
+  identification:
+    status: identified
+    unidentified:
+      name: Unusual Object
+      img: systems/pf2e/icons/unidentified_item_icons/adventuring_gear.webp
+      data:
+        description:
+          value: ''
+    misidentified: {}
+  usage:
+    value: other
+  subitems: []
+  source:
+    value: ''
+  schema:
+    version: 0.844
+    lastMigration:
+      datetime: '2023-07-01T12:26:57.266+02:00'
+      version:
+        schema: 0.819
+        foundry: '11.304'
+        system: 5.0.2
+  weight:
+    value: L
+  equippedBulk:
+    value: ''
+  stackGroup: null
+  negateBulk:
+    value: '0'
+  preciousMaterial:
+    value: null
+  preciousMaterialGrade:
+    value: null
+img: icons/containers/chest/chest-simple-box-brown.webp
+flags:
+  pf2e-heroic-crafting-automation:
+    isMaterialTrove: true
+    leftovers: 0 gp
+_id: SpZZdsyybo79tRcP
+sort: 700000
+ownership:
+  default: 0
+_stats:
+  coreVersion: '13.348'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: 1758513972792
+  lastModifiedBy: t20builder000000
+  duplicateSource: null
+  exportSource: null
+folder: null
+_key: '!items!SpZZdsyybo79tRcP'

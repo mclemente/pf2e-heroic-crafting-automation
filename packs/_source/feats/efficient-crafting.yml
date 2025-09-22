@@ -1,0 +1,80 @@
+_id: 7GEXIP3cKDxu2Tw9
+name: Efficient Crafting
+type: feat
+img: systems/pf2e/icons/default-icons/feats.webp
+effects: []
+folder: null
+sort: 0
+flags: {}
+_stats:
+  coreVersion: '13.348'
+  systemId: pf2e
+  systemVersion: 7.5.1
+  createdTime: null
+  modifiedTime: 1758512814961
+  lastModifiedBy: t20builder000000
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+system:
+  description:
+    value: >-
+      <p>You can tell when a project is going poorly and know when to cut your
+      losses on familiar projects. When you roll a failure, but not a critical
+      failure, on a check to
+      @Compendium[heroic-crafting.actions.bvV60XkAwimfgtAu]{Craft A Project}
+      that your Specialty Crafting applies to, you recover half the materials
+      you spent as the Cost of the Craft a Project activity.</p>
+    gm: ''
+  traits:
+    value: []
+    rarity: common
+    otherTags: []
+  rules:
+    - key: CraftingOption
+      desc: Recover half the materials on failure. Check manually if applies!
+    - key: Note
+      selector: skill-check
+      title: '{item|name}'
+      text: >-
+        When you roll a failure, but not a critical failure, on a check to Craft
+        A Project that your Specialty Crafting applies to, you recover half the
+        materials you spent as the Cost of the Craft a Project activity. (See at
+        the bottom of this chat card for the value.)
+      predicate:
+        - action:craftproj
+        - crafting:heroic:settings:efficient-crafting
+      outcome:
+        - failure
+  slug: null
+  level:
+    value: 7
+  onlyLevel1: false
+  maxTakable: 1
+  actionType:
+    value: passive
+  actions:
+    value: null
+  prerequisites:
+    value:
+      - value: master in Crafting
+      - value: Specialty Crafting or Seasoned
+  location: null
+  publication:
+    title: ''
+    authors: ''
+    license: OGL
+    remaster: false
+  _migration:
+    version: 0.935
+    previous:
+      schema: null
+      foundry: '12.343'
+      system: 6.12.4
+  category: bonus
+  subfeatures:
+    proficiencies: {}
+    senses: {}
+    suppressedFeatures: []
+_key: '!items!7GEXIP3cKDxu2Tw9'

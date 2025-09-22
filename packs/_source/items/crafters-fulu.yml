@@ -1,0 +1,139 @@
+name: Crafter's Fulu
+type: consumable
+img: systems/pf2e/icons/default-icons/consumable.svg
+effects: []
+folder: null
+flags: {}
+_stats:
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.348'
+  systemId: pf2e
+  systemVersion: 7.5.1
+  createdTime: 1758513964923
+  modifiedTime: 1758514226011
+  lastModifiedBy: t20builder000000
+ownership:
+  default: 0
+system:
+  description:
+    gm: ''
+    value: >-
+      <p><strong>Usage</strong> affixed to artisan's tools</p>
+
+      <p><strong>Duration</strong> see text</p>
+
+      <hr />
+
+      <p><strong>Activate</strong> <span class="pf2-icon">f</span>
+      (Envision);</p>
+
+      <p><strong>Requirements</strong> master in Crafting</p>
+
+      <p>This charm - traditionally decorated with Dwarven runes penned in a
+      deep burgundy ink - is a mainstay of many serious artisans. You receive a
+      +1 status bonus on your next check to
+      @Compendium[heroic-crafting.actions.bvV60XkAwimfgtAu]{Craft A Project}.
+      This bonus lasts for the duration of your check, even if it takes place
+      over a long period of downtime. If that check is an exploration activity,
+      you can roll twice and take the better result; this is a fortune
+      effect.</p>
+
+      <p>@Compendium[heroic-crafting.items.qc0jdrtVr7R3BbY9]{Effect: Crafter's
+      Fulu (Downtime)}</p>
+
+      <p>@Compendium[heroic-crafting.items.wOIoPjyKcnUt3B3P]{Effect: Crafter's
+      Fulu (Exploration)}</p>
+  rules:
+    - key: FlatModifier
+      label: Crafter's Fulu
+      selector: skill-check
+      type: status
+      value: 1
+      removeAfterRoll: 'true'
+      predicate:
+        - action:craftproj
+        - downtime
+  slug: null
+  _migration:
+    version: 0.943
+    lastMigration: null
+    previous:
+      schema: 0.935
+      foundry: '13.348'
+      system: 7.5.1
+  traits:
+    otherTags: []
+    value:
+      - consumable
+      - fulu
+      - magical
+    rarity: common
+  publication:
+    title: Heroic Crafting
+    authors: ''
+    license: OGL
+    remaster: false
+  level:
+    value: 8
+  quantity: 1
+  baseItem: null
+  bulk:
+    value: 0
+  hp:
+    value: 0
+    max: 0
+  hardness: 0
+  price:
+    value:
+      gp: 100
+    per: 1
+  equipped:
+    carryType: worn
+  containerId: null
+  size: med
+  material:
+    type: null
+    grade: null
+  identification:
+    status: identified
+    unidentified:
+      name: Unusual Liquid
+      img: systems/pf2e/icons/unidentified_item_icons/potions.webp
+      data:
+        description:
+          value: ''
+    misidentified: {}
+  category: fulu
+  uses:
+    value: 1
+    max: 1
+    autoDestroy: true
+    per: null
+    autoUse: true
+  damage: null
+  usage:
+    value: other
+  stackGroup: null
+  spell: null
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  autoUse:
+    value: true
+    _deprecated: true
+_id: Ed8JSWTQP5OkK7XM
+sort: 900000
+_key: '!items!Ed8JSWTQP5OkK7XM'

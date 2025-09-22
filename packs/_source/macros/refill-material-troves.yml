@@ -1,0 +1,152 @@
+name: Refill Material Troves
+type: script
+author: BRial3lkTUItF0fP
+img: icons/skills/trades/mining-pickaxe-stone-cart.webp
+scope: global
+command: |-
+  if (!token) {
+      ui.notifications.warn("Please select a token!");
+      return;
+  }
+
+  const troves = game.pf2eHeroicCrafting.getTroves(token.actor);
+
+  const troveHTML = troves.map(trove => {
+      const cost = game.pf2e.Coins.fromPrice(trove.system.price, trove.system.quantity);
+
+      return `
+          <div class="form-group trove-div" data-item-id="${trove.id}">
+              <span>${trove.name}</span>
+              <select autofocus class="troveLevel">${[...Array(token.actor.level).keys()].map(level => {
+                  level++;
+                  const selected = trove.level === level ? `selected="selected"` : ``;
+                  return '<option value="'.concat(level, '" ', selected, '>', level, '</option>');
+              })}</select>
+              <input type="text" value="${cost}" class="materials" style='margin-right: 20px; margin-left: 20px'>
+              <strong class="bulk" data-item-quantity="${trove.quantity}">${trove.bulk}</strong>
+              <strong class="leftovers">${trove.flags["pf2e-heroic-crafting-automation"]?.leftovers || "0 gp"}</strong>
+          </div>
+      `
+  });
+
+  function updateRow(troveDiv) {
+      const materials = game.pf2e.Coins.fromString(troveDiv.children(".materials")[0].value);
+      const newTroveValue = game.pf2eHeroicCrafting.changeTroveValue(troveDiv.children(".troveLevel")[0].value, materials);
+
+      const formattedBulk = {
+          normal: Math.floor(newTroveValue.quantity / 10),
+          light: newTroveValue.quantity - (Math.floor(newTroveValue.quantity / 10) * 10)
+      };
+      let bulkHTML = "";
+
+      if (formattedBulk.normal > 0) {
+          bulkHTML += `${formattedBulk.normal}`;
+      }
+      if (formattedBulk.light > 0) {
+          bulkHTML += formattedBulk.normal > 0 ? `; ${formattedBulk.light}L` : `${formattedBulk.light}L`;
+      }
+      if (formattedBulk.normal === 0 && formattedBulk.light === 0) {
+          bulkHTML = "-";
+      }
+
+      troveDiv.children(".bulk").html(bulkHTML);
+      troveDiv.children(".bulk").attr("data-item-quantity", newTroveValue.quantity);
+      troveDiv.children(".leftovers").html(newTroveValue.leftovers.toString());
+  }
+
+  const dialogResults = await Dialog.wait({
+      title: "Refill Material Troves",
+      content: `
+              <form>
+                  <body>
+                      <section>
+                          <h1>Refill Material Troves</h1>
+                      </section>
+                      <section>
+                          <p>Adjust the values of your Material Troves to fill them up. Their Bulk should change as you do so.</p>
+                          <p>You can adjust the level of your Material Troves up to your level. Higher level Material Troves contain more value in the same Bulk.</p> 
+                          <p><strong>You must manually adjust any changes in your coins.</strong></p>
+                      </section>
+                  </body>
+                  <hr/>
+                  <div class="form-group">
+                      <strong>Name</strong>
+                      <strong>Level</strong>
+                      <strong style='margin-right: 20px; margin-left: 20px'>Value</strong>
+                      <strong>Bulk</strong>
+                      <strong>Leftover</strong>
+                  </div>
+                  <hr/>
+                  ${troveHTML.join("")}
+                  <hr/>
+                  <body>
+                      <section>
+                          <p><strong>Note:</strong> The Leftover column indicates value that cannot be represented with Bulk changes, but is still part of the Material Trove. As an example, if you Forage Crafting Resources for 1 day in a level 0 location, you would add 1 sp to your Material Trove -- but no Material Trove can actually represent that with a change in Bulk. This will still be accounted for, but will not show on the item.</p>
+                      </section>
+                  </body>
+                  <br/>
+              </form>
+          `,
+      buttons: {
+          refill: {
+              label: "Refill",
+              icon: "<i class='fa-solid fa-toolbox'></i>",
+              callback: (html) => {
+                  let updates = [];
+
+                  $(html).find(".trove-div").each(function () {
+                      const level = Number($(this).find(".troveLevel")[0].value) || 0;
+
+                      updates.push({
+                          _id: $(this).attr("data-item-id"),
+                          "system.level.value": level,
+                          "system.price.value": game.pf2eHeroicCrafting.spendingLimit("hour", level),
+                          "system.quantity": Number($(this).find(".bulk").attr("data-item-quantity")) || 0,
+                          "flags.pf2e-heroic-crafting-automation.leftovers": $(this).find(".leftovers").html()
+                      });
+                  });
+
+                  return updates;
+              }
+          },
+          cancel: {
+              label: "Cancel",
+              icon: "<i class='fa-solid fa-ban'></i>",
+          }
+      },
+      default: "cancel",
+      render: ([content]) => {
+          const materialInputs = content
+              .querySelectorAll(".trove-div");
+
+          for (let i = 0; i < materialInputs.length; i++) {
+              materialInputs[i].querySelector(".troveLevel").addEventListener("change", (event) => {
+                  updateRow($(event.target).parent());
+              });
+
+              materialInputs[i].querySelector(".materials").addEventListener("keyup", (event) => {
+                  updateRow($(event.target).parent());
+              });
+          };
+      }
+  }, { width: 600 });
+
+  if (dialogResults !== "cancel") {
+      await token.actor.updateEmbeddedDocuments("Item", dialogResults);
+  }
+flags: {}
+_id: wtYkY4Kay4dZ3HT6
+sort: 0
+ownership:
+  default: 0
+_stats:
+  coreVersion: '13.348'
+  systemId: null
+  systemVersion: null
+  createdTime: null
+  modifiedTime: null
+  lastModifiedBy: null
+  duplicateSource: null
+  exportSource: null
+folder: null
+_key: '!macros!wtYkY4Kay4dZ3HT6'

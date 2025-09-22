@@ -1,0 +1,165 @@
+name: Mobile Workshop
+type: vehicle
+img: systems/pf2e/icons/default-icons/vehicle.svg
+items: []
+effects: []
+folder: null
+sort: 0
+flags: {}
+_id: FqEGz3xs1IhMNMIi
+_stats:
+  coreVersion: '13.346'
+  systemId: pf2e
+  systemVersion: 6.12.4
+  createdTime: null
+  modifiedTime: 1754335614151
+  lastModifiedBy: t20builder000000
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+system:
+  attributes:
+    ac:
+      value: 11
+    hardness: 5
+    hp:
+      value: 10
+      max: 18
+      temp: 0
+      details: ''
+    collisionDC:
+      value: 15
+    collisionDamage:
+      value: 2d6
+    immunities: []
+    weaknesses: []
+    resistances: []
+    emitsSound: encounter
+  saves:
+    fortitude:
+      value: 7
+  details:
+    description: >-
+      <p>This specialized wagon contains everything you need to ply your trade
+      on the road. It counts as a suitable workshop and provides artisan's tools
+      for one type of crafting, even while moving. Additionally, you don't take
+      the penalty for making a downtime check to
+      @Compendium[heroic-crafting.actions.bvV60XkAwimfgtAu]{Craft A Project}
+      while engaging in 4 hours or less of exploration activities. It also has
+      space for up to 50 Bulk of crafting materials. Uses the same Vehicle
+      statistics as a Wagon.</p>
+    level:
+      value: 8
+    price: 1020
+    space:
+      long: 10
+      wide: 10
+      high: 5
+    crew: 1 pilot
+    passengers: '2'
+    pilotingCheck: >-
+      Driving Lore (DC 15) or Nature (DC 17 to DC 25, depending on the pulling
+      creature)
+    AC: 0
+    speed: the speed of the slowest pulling creature (pulled by 2 Large creatures)
+    publication:
+      title: ''
+      authors: ''
+      license: OGL
+      remaster: false
+  traits:
+    rarity: common
+    size:
+      value: lg
+    value: []
+  _migration:
+    version: 0.935
+    previous:
+      schema: null
+      foundry: '12.343'
+      system: 6.12.4
+prototypeToken:
+  flags:
+    pf2e:
+      linkToActorSize: true
+  height: 2
+  width: 2
+  name: Mobile Workshop
+  displayName: 20
+  actorLink: false
+  lockRotation: false
+  rotation: 0
+  alpha: 1
+  light:
+    alpha: 0.5
+    angle: 360
+    bright: 0
+    coloration: 1
+    dim: 0
+    luminosity: 0.5
+    saturation: 0
+    contrast: 0
+    shadows: 0
+    animation:
+      speed: 5
+      intensity: 5
+      reverse: false
+      type: null
+    darkness:
+      min: 0
+      max: 1
+    attenuation: 0.5
+    negative: false
+    priority: 0
+    color: null
+  disposition: -1
+  displayBars: 20
+  bar1:
+    attribute: attributes.hp
+  bar2:
+    attribute: null
+  randomImg: false
+  texture:
+    src: systems/pf2e/icons/default-icons/vehicle.svg
+    scaleX: 1
+    scaleY: 1
+    anchorX: 0.5
+    anchorY: 0.5
+    offsetX: 0
+    offsetY: 0
+    fit: contain
+    rotation: 0
+    tint: '#ffffff'
+    alphaThreshold: 0.75
+  sight:
+    angle: 360
+    enabled: false
+    range: 0
+    brightness: 1
+    visionMode: basic
+    color: null
+    attenuation: 0.1
+    saturation: 0
+    contrast: 0
+  appendNumber: false
+  prependAdjective: false
+  detectionModes: []
+  occludable:
+    radius: 0
+  ring:
+    enabled: false
+    colors:
+      ring: null
+      background: null
+    effects: 1
+    subject:
+      scale: 1
+      texture: null
+  turnMarker:
+    mode: 1
+    animation: null
+    src: null
+    disposition: false
+  movementAction: null
+_key: '!actors!FqEGz3xs1IhMNMIi'

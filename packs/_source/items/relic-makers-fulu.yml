@@ -1,0 +1,118 @@
+name: Relic Maker's Fulu
+type: consumable
+img: systems/pf2e/icons/default-icons/consumable.svg
+effects: []
+folder: null
+flags: {}
+_stats:
+  duplicateSource: null
+  exportSource: null
+  coreVersion: '13.348'
+  systemId: pf2e
+  systemVersion: 7.5.1
+  createdTime: 1758513971107
+  modifiedTime: 1758513972792
+  lastModifiedBy: t20builder000000
+ownership:
+  default: 0
+system:
+  description:
+    gm: ''
+    value: >-
+      <p><strong>Usage</strong> affixed to a workspace</p>
+
+      <hr />
+
+      <p><strong>Activate</strong> <span class="pf2-icon">F</span> (Envision);
+      <strong>Trigger</strong> you
+      @Compendium[heroic-crafting.actions.ULKxHUhxSoAKa9eD]{Begin A Project}</p>
+
+      <p>This opalescent fulu is etched with an artistic depiction of the
+      Starstone and imparts a mote of Shelyn's creative power to the user.
+      Whenever you craft the triggering project in this workspace, you reduce
+      the Craft DC from rarity by one step: Uncommon items have their DC reduced
+      by 2; Rare items have their DC reduced by 3; and Unique items have their
+      DC reduced by 5.</p>
+  rules: []
+  slug: null
+  _migration:
+    version: 0.943
+    lastMigration: null
+    previous:
+      schema: 0.935
+      foundry: '13.348'
+      system: 7.5.1
+  traits:
+    otherTags: []
+    value:
+      - consumable
+      - fulu
+      - magical
+    rarity: uncommon
+  publication:
+    title: Heroic Crafting
+    authors: ''
+    license: OGL
+    remaster: false
+  level:
+    value: 17
+  quantity: 1
+  baseItem: null
+  bulk:
+    value: 0
+  hp:
+    value: 0
+    max: 0
+  hardness: 0
+  price:
+    value:
+      gp: 2850
+  equipped:
+    carryType: worn
+  containerId: null
+  size: med
+  material:
+    type: null
+    grade: null
+  identification:
+    status: identified
+    unidentified:
+      name: Unusual Liquid
+      img: systems/pf2e/icons/unidentified_item_icons/potions.webp
+      data:
+        description:
+          value: ''
+    misidentified: {}
+  category: fulu
+  uses:
+    value: 1
+    max: 1
+    autoDestroy: true
+    per: null
+    autoUse: true
+  damage: null
+  usage:
+    value: other
+  stackGroup: null
+  spell: null
+  activation:
+    type: ''
+    cost: 0
+    condition: ''
+  duration:
+    value: null
+    units: ''
+  target:
+    value: null
+    units: ''
+    type: ''
+  range:
+    value: null
+    long: null
+    units: ''
+  autoUse:
+    value: true
+    _deprecated: true
+_id: wS616TSUyffYsUsI
+sort: 100000
+_key: '!items!wS616TSUyffYsUsI'

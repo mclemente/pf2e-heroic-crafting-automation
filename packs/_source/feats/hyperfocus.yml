@@ -1,0 +1,108 @@
+_id: GNYDY7NsX0O8BcLw
+name: Hyperfocus
+type: feat
+img: systems/pf2e/icons/default-icons/feats.webp
+effects: []
+folder: null
+sort: 0
+flags: {}
+_stats:
+  coreVersion: '13.348'
+  systemId: pf2e
+  systemVersion: 7.5.1
+  createdTime: null
+  modifiedTime: 1758512664036
+  lastModifiedBy: t20builder000000
+  duplicateSource: null
+  exportSource: null
+ownership:
+  default: 0
+system:
+  description:
+    value: >-
+      <p>When inspiration strikes, you can progress further than should really
+      be possible. When you roll a critical success on a check to
+      @Compendium[heroic-crafting.actions.bvV60XkAwimfgtAu]{Craft A Project} for
+      at least a day, your expertise in crafting allows you to make more
+      progress than normal with the materials available.</p>
+
+      <p>In addition to the progress you would make on a success, if you spent 1
+      day crafting, add the value listed in
+      @Compendium[heroic-crafting.tables.EDZW2vtmpGZUqUrk]{Table 1: Spending
+      Limit} for 1 hour to your Current Value. If you spent 1 week crafting, add
+      the value listed in Table 1: Spending Limit for 1 day to your Current
+      Value. This feat cannot add more than the Cost of the Craft a Project
+      activity to the item's Current Value.</p>
+    gm: ''
+  traits:
+    value: []
+    rarity: common
+    otherTags: []
+  rules:
+    - key: AddCraftProgress
+      duration: day
+      predicate:
+        - action:craftproj
+        - crafting:heroic:duration:week
+      outcome:
+        - criticalSuccess
+    - key: AddCraftProgress
+      duration: hour
+      predicate:
+        - action:craftproj
+        - crafting:heroic:duration:day
+      outcome:
+        - criticalSuccess
+    - key: Note
+      selector: skill-check
+      text: >-
+        When you roll a critical success on a check to Craft A Project for at
+        least a day, your expertise in crafting allows you to make more progress
+        than normal with the materials available.  In addition to the progress
+        you would make on a success, if you spent 1 day crafting, add the value
+        listed in
+        @UUID[Compendium.heroic-crafting.tables.EDZW2vtmpGZUqUrk]{Table 1:
+        Spending Limit} for 1 hour to your Current Value. If you spent 1 week
+        crafting, add the value listed in
+        @UUID[Compendium.heroic-crafting.tables.EDZW2vtmpGZUqUrk]{Table 1:
+        Spending Limit} for 1 day to your Current Value. This feat cannot add
+        more than the Cost of the Craft a Project activity to the item's Current
+        Value.
+      predicate:
+        - action:craftproj
+        - or:
+            - crafting:heroic:duration:week
+            - crafting:heroic:duration:day
+      title: '{item|name}'
+      outcome:
+        - criticalSuccess
+  slug: null
+  level:
+    value: 2
+  onlyLevel1: false
+  maxTakable: 1
+  actionType:
+    value: passive
+  actions:
+    value: null
+  prerequisites:
+    value:
+      - value: expert in Crafting
+  location: null
+  publication:
+    title: ''
+    authors: ''
+    license: OGL
+    remaster: false
+  _migration:
+    version: 0.935
+    previous:
+      schema: null
+      foundry: '12.343'
+      system: 6.12.4
+  category: bonus
+  subfeatures:
+    proficiencies: {}
+    senses: {}
+    suppressedFeatures: []
+_key: '!items!GNYDY7NsX0O8BcLw'
